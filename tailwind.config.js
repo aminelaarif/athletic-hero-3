@@ -7,11 +7,11 @@ export default {
         sans: ["Inter", "system-ui", "sans-serif"]
       },
       colors: {
-        porcelain: "#CEE5F2",
-        beige: "#ACCBE1",
-        palm: "#7C98B3",
-        carbon: "#637081",
-        onyx: "#536B78"
+        porcelain: "#F7F7F2",
+        beige: "#E4E6C3",
+        palm: "#899878",
+        carbon: "#222725",
+        onyx: "#121113"
       }
     }
   },
