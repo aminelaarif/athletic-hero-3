@@ -1,29 +1,29 @@
 import React from "react";
 import { FadeInOnScroll } from "../motion";
 import BlurText from "../BlurText";
-import Particles from "../Particles";
+import LightRays from "../LightRays";
 
 function Hero() {
   return (
     <header
       id="top"
-      className="relative isolate flex min-h-screen items-stretch overflow-hidden bg-carbon text-white"
+      className="relative isolate flex min-h-screen items-stretch overflow-hidden bg-onyx text-white"
     >
       <div className="pointer-events-none absolute inset-0">
-        <Particles
-          particleCount={220}
-          particleSpread={6}
-          speed={0.14}
-          particleColors={["#F7F7F2", "#E4E6C3", "#899878"]}
-          moveParticlesOnHover
-          particleHoverFactor={0.6}
-          alphaParticles
-          particleBaseSize={70}
-          sizeRandomness={0.8}
-          cameraDistance={16}
-          disableRotation={false}
-          pixelRatio={Math.min(window.devicePixelRatio || 1, 1.5)}
-          className="opacity-80"
+        <LightRays
+          raysOrigin="top-center"
+          raysColor="#CEE5F2"
+          raysSpeed={0.9}
+          lightSpread={1.2}
+          rayLength={2.0}
+          pulsating={true}
+          fadeDistance={1.2}
+          saturation={1.1}
+          followMouse={true}
+          mouseInfluence={0.15}
+          noiseAmount={0.08}
+          distortion={0.12}
+          className="opacity-90"
         />
       </div>
 
